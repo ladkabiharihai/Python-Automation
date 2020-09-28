@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" />
+    <title>Executing Commands</title>
+    <style>
+    .center-algn{
+        padding-left: 350px;
+        margin-top: 50px;
+    }
+    .top{
+        padding-top: 40px;
+    }
+    .command{
+        background-image: url("command.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    h1{
+        color: crimson;
+        background-color: black;
+        background-size: 200px;
+    }
+    h3{
+        color: green;
+        background-color: black;
+    
+    }
+
+    h2{
+        color: blue;
+        background-color: lightblue;
+    }
+
+    
+    button{
+        border: 1px solid #50d1c0;
+        border-radius: 10px;
+        margin: 0 5px;
+        padding: 12px 35px;
+        outline: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+        background: white;
+        font-weight: 400;
+    }
+    button:hover{
+        border: 1px solid #50d1c0;
+        border-radius: 10px;
+        margin: 0 5px;
+        padding: 12px 35px;
+        outline: none;
+        color: rgb(175, 22, 94);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+        background: coral;
+        font-weight: 400;
+    }
+    .run{
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+    .form-group{
+        margin-right: 0px;
+        margin-top: -20px;
+    }
+    .frm{
+        display: block;
+        width: 40%;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+    .sl{
+        display: block;
+        width: 30%;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        margin-bottom: -40px;
+        margin-right: 10px;
+    }
+    .algn{
+        margin-left: 380px;
+    }
+    .alig{
+        margin-left: 370px;
+    }
+    </style>
+
+</head>
+<body>
+<section class="command">
+<div class="col-8 offset-2 top">
+<h1 class="text-center">Run RedHat Commands</h1>
+    <h3 class="text-center">Execute linux commands here :</h3>
+    <form action="http://192.168.233.132/cgi-bin/iiec-rise.py">
+        <div class="center-algn">
+        <div class="form-group">
+        <input class="frm" type="text" name="x" placeholder="command"></div><br>
+        <div class="run"><button type="submit">run</button></div>
+        </div>
+    </form>
+</div>  
+
+
+<div class="col-8 offset-2 mt-5 top">
+    <h1 class="text-center pr-4">Docker</h1>
+    <form action="http://192.168.233.132/cgi-bin/docker.py">
+        <h2 class="text-center">Enter container name </h2> 
+        <div class="center-algn">
+        <div class="form-group">
+            <input class="frm" type="text" name="n" placeholder="container name">
+        </div>
+    </div>
+        <h2 class="text-center">select image: </h2>
+        <div class="alig">
+        <select class="sl" name="i">
+            <option>ubuntu</option>
+            <option>debian</option>
+            <option>python</option>
+            <option>centos</option>
+            <option>fedora</option>
+        </select><br><br>
+    
+        <button type="submit">Launch Container</button>
+    </div>   
+    </form>
+</div>
+</section>  
+</body>
+</html>
