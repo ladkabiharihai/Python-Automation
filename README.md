@@ -1,4 +1,6 @@
-![alt text](https://github.com/jokker99/Python-Automation/blob/master/index.jpg?raw=true)<br>
+![Python Automation](https://github.com/jokker99/Python-Automation/blob/master/index.jpg?raw=true)<br>
+
+<img src="https://github.com/jokker99/Python-Automation/blob/master/index.jpg" width="">
 
 # Python-Automation
 I automated some commands and docker with help of python
